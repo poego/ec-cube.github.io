@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: Jekyll Doc Theme
-  version: 6.0
+  product: EC-CUBE開発ドキュメント
+  version: 
   folders:
 
   - title:
@@ -19,29 +19,30 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Overview
+  - title: Quick Start
     output: web, pdf
     folderitems:
 
-    - title: Get started
+    - title: このサイトについて
       url: /index.html
       output: web, pdf
       type: homepage
 
-    - title: Introduction
+    - title: システム要件
+      url: /requirement.html
+      output: web, pdf
+      type: homepage
+
+    - title: 開発環境の構築
       url: /mydoc_introduction.html
       output: web, pdf
 
-    - title: Supported features
+    - title: インストール方法
       url: /mydoc_supported_features.html
       output: web, pdf
 
-    - title: About the theme author
+    - title: バージョンアップ方法
       url: /mydoc_about.html
-      output: web, pdf
-
-    - title: Support
-      url: /mydoc_support.html
       output: web, pdf
 
   - title: Release Notes

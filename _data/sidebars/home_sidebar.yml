@@ -1,22 +1,81 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
-- title: Sidebar
-  levels: one
+- title: sidebar
+  product: EC-CUBE開発ドキュメント
+  version: 
   folders:
 
-  - title: Products
-    output: web
+  - title:
+    output: pdf
+    type: frontmatter
     folderitems:
-    - title: News
-      url: /news.html
-      output: web
-    - title: Theme instructions
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Quick Start
+    output: web, pdf
+    folderitems:
+
+    - title: このサイトについて
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: システム要件
+      url: /requirement.html
+      output: web, pdf
+      type: homepage
+
+    - title: 開発環境の構築
       url: /mydoc_introduction.html
-      output: web
-    - title: Product 1
-      url: /p1_landing_page.html
-      output: web
-    - title: Product 2
-      url: /p2_landing_page.html
-      output: web
+      output: web, pdf
+
+    - title: インストール方法
+      url: /install.html
+      output: web, pdf
+
+    - title: バージョンアップ方法
+      url: /mydoc_about.html
+      output: web, pdf
+
+  - title: 本体の仕様
+    output: web, pdf
+    folderitems:
+
+      - title: ディレクトリ・ファイル構成
+        url: /
+        output: web, pdf
+      - title: テンプレート探索順序
+        url: /
+        output: web, pdf
+      - title: 機能一覧
+        url: /
+        output: web, pdf
+      - title: テーブル・ER図
+        url: /
+        output: web, pdf
+      - title: 結合試験項目書
+        url: /
+        output: web, pdf
+      - title: 実験的な実装
+        url: /
+        output: web, pdf
+      - title: 設定ファイル
+        url: /
+        output: web, pdf
+  - title: プラグイン仕様
+      output: web, pdf
+      folderitems:
+
+        - title: プラグイン仕様・チュートリアル
+
+
+
+
