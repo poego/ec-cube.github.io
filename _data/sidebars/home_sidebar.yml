@@ -22,25 +22,20 @@ entries:
   - title: Quick Start
     output: web, pdf
     folderitems:
-
     - title: このサイトについて
       url: /index.html
       output: web, pdf
       type: homepage
-
     - title: システム要件
       url: /requirement.html
       output: web, pdf
       type: homepage
-
     - title: 開発環境の構築
       url: /mydoc_introduction.html
       output: web, pdf
-
     - title: インストール方法
       url: /install.html
       output: web, pdf
-
     - title: バージョンアップ方法
       url: /mydoc_about.html
       output: web, pdf
@@ -48,7 +43,6 @@ entries:
   - title: 本体の仕様
     output: web, pdf
     folderitems:
-
       - title: ディレクトリ・ファイル構成
         url: /
         output: web, pdf
@@ -70,11 +64,145 @@ entries:
       - title: 設定ファイル
         url: /
         output: web, pdf
-  - title: プラグイン仕様
-      output: web, pdf
-      folderitems:
 
+  - title: プラグイン仕様
+    output: web, pdf
+    folderitems: 
         - title: プラグイン仕様・チュートリアル
+          url: /plugin.html
+          output: web, pdf
+        - title: インストーラ仕様
+          url: /plugin_install.html
+          output: web, pdf
+        - title: ハンドラによる優先制御仕様
+          url: /plugin_handler.html
+          output: web, pdf
+        - title: php app/console plugin:develop を利用したプラグイン開発
+          url: plugin_console.html
+          output: web, pdf
+        - title: プラグインのテスト
+          url: plugin-test.html
+          output: web, pdf
+
+  - title: Web API仕様
+    output: web, pdf
+    folderitems: 
+        - title: Web API β版 プラグインスタートアップガイド
+          url: web-api-doc.html
+          output: web, pdf
+        - title: Web API開発指針
+          url: api.html
+          output: web, pdf
+        - title: Web API認証 ( Authorization ) ガイド
+          url: api_authorization.html
+          output: web, pdf
+
+  - title: 本体開発ガイドライン
+    output: web, pdf
+    folderitems: 
+      - title: 開発作業全体概要
+        url: /workflow-general-image.html
+        output: web, pdf
+      - title: コーディング規約
+        url: /coding_style.html
+        output: web, pdf
+      - title: マイグレーションガイド
+        url: /migration.html
+        output: web, pdf
+      - title: ログ設計指針
+        url: http://qiita.com/nanasess/items/350e59b29cceb2f122b3
+        output: web
+      - title: Gitを用いた開発手順
+        url: /workflow.html
+        output: web, pdf
+      - title: カスタマイズリファレンス（新ページ開発）
+        url: /customize-reference.html
+        output: web, pdf
+      - title: 開発の補助:デバッグ・Tips
+        url: /tips.html
+        output: web, pdf
+      - title: EC-CUBE 3で利用されている技術
+        url: /architecture.html
+        output: web, pdf
+
+  - title: 本体開発チュートリアル
+    output: web, pdf
+    folderitems:
+      - title: URLを設定しよう-ルーティングとコントローラープロバイダー
+        url: /tutorial-1.html
+        output: web, pdf
+      - title: コントローラーからビューを表示してみよう-ビューのレンダリング
+        url: /tutorial-2.html
+        output: web, pdf
+      - title: 画面に変数を渡してみよう-Twig構文とView変数
+        url: /tutorial-3.html
+        output: web, pdf
+      - title: フォームを表示してみよう-Formとフォームビルダー
+        url: /tutorial-4.html
+        output: web, pdf
+      - title: フォーム情報を整理して入力値チェックも追加しよう-FormType
+        url: /tutorial-5.html
+        output: web, pdf
+      - title: データーベースを作成しよう-チュートリアルのテーブル定義
+        url: /tutorial-6.html
+        output: web, pdf
+      - title: Doctrineのためにデーターベース構造を設定しよう-データーベーススキーマ定義
+        url: /tutorial-7.html
+        output: web, pdf       
+      - title: Doctrineのためにエンティティファイルを作成しよう-エンティティ
+        url: /tutorial-8.html
+        output: web, pdf
+      - title: データーベースに登録してみよう-エンティティマネージャーを利用した情報の登録
+        url: /tutorial-9.html
+        output: web, pdf       
+      - title: データベースから情報を取り出してテーブルリストで表示してみよう-データーベース情報の取得とViewのループ処理
+        url: /tutorial-10.html
+        output: web, pdf       
+      - title: データーベース操作処理をレポジトリに整理しよう-レポジトリとデータベース操作
+        url: /tutorial-11.html
+        output: web, pdf   
+      - title: リストを編集しよう-条件検索とアップデート処理
+        url: /tutorial-12.html
+        output: web, pdf   
+      - title: いらない情報を削除してみよう-レコードの削除
+        url: /tutorial-13.html
+        output: web, pdf  
+
+  - title: クックブック
+    output: web, pdf
+    folderitems: 
+      - title: 管理画面項目の追加 
+        url: /cookbook-1-cube3-customize-admin-add.html
+        output: web, pdf
+      - title: タグの追加
+        url: /cookbook-2-cube3-customize-js.html
+        output: web, pdf
+      - title: パフォーマンス対応
+        url: /performance.html
+        output: web, pdf
+
+  - title: カスタマイズガイドライン
+    output: web, pdf
+    subfolders:
+      - title: デザインのカスタマイズ
+        output: web, pdf
+        subfolderitems:
+          - title: デザインテンプレートが読み込まれる順序
+            url: /guideline/design-template
+            output: web, pdf
+          - title: default_frame.twigの構成
+            url: /guideline/design-default-frame
+            output: web, pdf
+      - title: プラグインの利用
+        output: web, pdf
+        folderitems: 
+          - title: プラグイン導入方法
+            url: /guideline/plugin-install
+            output: web, pdf
+
+
+
+
 
 
 
