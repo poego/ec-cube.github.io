@@ -31,39 +31,44 @@ entries:
       output: web, pdf
       type: homepage
     - title: 開発環境の構築
-      url: /mydoc_introduction.html
+      url: /development-environment.html
       output: web, pdf
     - title: インストール方法
       url: /install.html
       output: web, pdf
     - title: バージョンアップ方法
-      url: /mydoc_about.html
+      url: /update.html
       output: web, pdf
 
   - title: 本体の仕様
     output: web, pdf
     folderitems:
       - title: ディレクトリ・ファイル構成
-        url: /
+        url: /spec-directory-structure.html
         output: web, pdf
       - title: テンプレート探索順序
-        url: /
+        url: /template.html
         output: web, pdf
       - title: 機能一覧
-        url: /
+        url: https://github.com/EC-CUBE/eccube3-doc/blob/master/feature_list.xls
         output: web, pdf
       - title: テーブル・ER図
-        url: /
+        url: https://github.com/EC-CUBE/eccube3-doc/tree/master/ER-D
         output: web, pdf
       - title: 結合試験項目書
-        url: /
+        url: https://github.com/EC-CUBE/eccube3-doc/tree/master/IntegrationTest
         output: web, pdf
       - title: 実験的な実装
-        url: /
+        url: /experimental.html
         output: web, pdf
       - title: 設定ファイル
-        url: /
+        url: /config
         output: web, pdf
+      - title: 複数配送
+        url: /multi-shipping.html
+        ouput: web, pdf
+      - title: 税率設定
+        url: /tax.html
 
   - title: プラグイン仕様
     output: web, pdf
@@ -78,125 +83,214 @@ entries:
           url: /plugin_handler.html
           output: web, pdf
         - title: php app/console plugin:develop を利用したプラグイン開発
-          url: plugin_console.html
+          url: /plugin_console.html
           output: web, pdf
         - title: プラグインのテスト
-          url: plugin-test.html
+          url: /plugin-test.html
           output: web, pdf
 
   - title: Web API仕様
     output: web, pdf
     folderitems: 
         - title: Web API β版 プラグインスタートアップガイド
-          url: web-api-doc.html
+          url: /web-api-doc.html
           output: web, pdf
         - title: Web API開発指針
-          url: api.html
+          url: /api.html
           output: web, pdf
         - title: Web API認証 ( Authorization ) ガイド
-          url: api_authorization.html
+          url: /api_authorization.html
           output: web, pdf
 
   - title: 本体開発ガイドライン
     output: web, pdf
-    folderitems: 
-      - title: 開発作業全体概要
-        url: /workflow-general-image.html
-        output: web, pdf
-      - title: コーディング規約
-        url: /coding_style.html
-        output: web, pdf
-      - title: マイグレーションガイド
-        url: /migration.html
-        output: web, pdf
-      - title: ログ設計指針
-        url: http://qiita.com/nanasess/items/350e59b29cceb2f122b3
-        output: web
-      - title: Gitを用いた開発手順
-        url: /workflow.html
-        output: web, pdf
-      - title: カスタマイズリファレンス（新ページ開発）
-        url: /customize-reference.html
-        output: web, pdf
-      - title: 開発の補助:デバッグ・Tips
-        url: /tips.html
-        output: web, pdf
-      - title: EC-CUBE 3で利用されている技術
-        url: /architecture.html
-        output: web, pdf
-
-  - title: 本体開発チュートリアル
-    output: web, pdf
     folderitems:
-      - title: URLを設定しよう-ルーティングとコントローラープロバイダー
-        url: /tutorial-1.html
-        output: web, pdf
-      - title: コントローラーからビューを表示してみよう-ビューのレンダリング
-        url: /tutorial-2.html
-        output: web, pdf
-      - title: 画面に変数を渡してみよう-Twig構文とView変数
-        url: /tutorial-3.html
-        output: web, pdf
-      - title: フォームを表示してみよう-Formとフォームビルダー
-        url: /tutorial-4.html
-        output: web, pdf
-      - title: フォーム情報を整理して入力値チェックも追加しよう-FormType
-        url: /tutorial-5.html
-        output: web, pdf
-      - title: データーベースを作成しよう-チュートリアルのテーブル定義
-        url: /tutorial-6.html
-        output: web, pdf
-      - title: Doctrineのためにデーターベース構造を設定しよう-データーベーススキーマ定義
-        url: /tutorial-7.html
-        output: web, pdf       
-      - title: Doctrineのためにエンティティファイルを作成しよう-エンティティ
-        url: /tutorial-8.html
-        output: web, pdf
-      - title: データーベースに登録してみよう-エンティティマネージャーを利用した情報の登録
-        url: /tutorial-9.html
-        output: web, pdf       
-      - title: データベースから情報を取り出してテーブルリストで表示してみよう-データーベース情報の取得とViewのループ処理
-        url: /tutorial-10.html
-        output: web, pdf       
-      - title: データーベース操作処理をレポジトリに整理しよう-レポジトリとデータベース操作
-        url: /tutorial-11.html
-        output: web, pdf   
-      - title: リストを編集しよう-条件検索とアップデート処理
-        url: /tutorial-12.html
-        output: web, pdf   
-      - title: いらない情報を削除してみよう-レコードの削除
-        url: /tutorial-13.html
-        output: web, pdf  
 
-  - title: クックブック
-    output: web, pdf
-    folderitems: 
-      - title: 管理画面項目の追加 
-        url: /cookbook-1-cube3-customize-admin-add.html
+    - title: 開発作業全体概要
+      url: /workflow-general-image.html
+      output: web, pdf
+      
+      subfolders:
+      - title: 開発規約
         output: web, pdf
-      - title: タグの追加
-        url: /cookbook-2-cube3-customize-js.html
+        subfolderitems:
+        - title: コーディング規約
+          url: /coding_style.html
+          output: web, pdf
+        - title: マイグレーションガイド
+          url: /migration.html
+          output: web, pdf
+        - title: ログ設計指針
+          url: http://qiita.com/nanasess/items/350e59b29cceb2f122b3
+          output: web
+        - title: Gitを用いた開発手順
+          url: /workflow.html
+          output: web, pdf
+        - title: カスタマイズリファレンス（新ページ開発）
+          url: /customize-reference.html
+          output: web, pdf
+        - title: 開発の補助:デバッグ・Tips
+          url: /tips.html
+          output: web, pdf
+        - title: EC-CUBE 3で利用されている技術
+          url: /architecture.html
+          output: web, pdf
+
+    - title: チュートリアル
+      url: /
+      output: web, pdf
+
+      subfolders:
+      - title: 目次
         output: web, pdf
-      - title: パフォーマンス対応
-        url: /performance.html
+        subfolderitems:
+        - title: ルーティングとコントローラープロバイダー
+          url: /tutorial-1.html
+          output: web, pdf
+        - title: ビューのレンダリング
+          url: /tutorial-2.html
+          output: web, pdf
+        - title: Twig構文とView変数
+          url: /tutorial-3.html
+          output: web, pdf
+        - title: Formとフォームビルダー
+          url: /tutorial-4.html
+          output: web, pdf
+        - title: FormType
+          url: /tutorial-5.html
+          output: web, pdf
+        - title: チュートリアルのテーブル定義
+          url: /tutorial-6.html
+          output: web, pdf
+        - title: データーベーススキーマ定義
+          url: /tutorial-7.html
+          output: web, pdf       
+        - title: エンティティ
+          url: /tutorial-8.html
+          output: web, pdf
+        - title: エンティティマネージャーを利用した情報の登録
+          url: /tutorial-9.html
+          output: web, pdf       
+        - title: データーベース情報の取得とViewのループ処理
+          url: /tutorial-10.html
+          output: web, pdf       
+        - title: レポジトリとデータベース操作
+          url: /tutorial-11.html
+          output: web, pdf   
+        - title: 条件検索とアップデート処理
+          url: /tutorial-12.html
+          output: web, pdf   
+        - title: レコードの削除
+          url: /tutorial-13.html
+          output: web, pdf  
+
+    - title: クックブック
+      url: /
+      output: web, pdf
+
+      subfolders:
+      - title: 目次
         output: web, pdf
+        subfolderitems:
+        - title: 管理画面項目の追加
+          url: /cookbook-1-cube3-customize-admin-add.html
+          output: web, pdf
+        - title: タグの追加
+          url: /tcookbook-2-cube3-customize-js.html
+          output: web, pdf
+        - title: パフォーマンス対応
+          url: /performance.html
+          output: web, pdf
 
   - title: カスタマイズガイドライン
     output: web, pdf
-    subfolders:
-      - title: デザインのカスタマイズ
+    folderitems:
+    
+    - title: デザインカスタマイズ概要
+      url: /mydoc_tag_archives_overview.html
+      output: web
+
+      subfolders:
+      - title: デザインカスタマイズ
         output: web, pdf
         subfolderitems:
-          - title: デザインテンプレートが読み込まれる順序
-            url: /guideline/design-template
-            output: web, pdf
-          - title: default_frame.twigの構成
-            url: /guideline/design-default-frame
-            output: web, pdf
+        - title: デザインテンプレートが読み込まれる順序
+          url: /guideline/design-template
+          output: web, pdf
+        - title: default_frame.twigの構成
+          url: /guideline/design-default-frame
+          output: web, pdf
+        - title: フォームレイアウトの変更
+          url: /guideline/design-default-frame
+          output: web, pdf
+        - title: ブロックの利用
+          url: /guideline/design-default-frame
+          output: web, pdf
+        - title: gulpを利用したディレクトリ構成
+          url: /guideline/design-default-frame
+          output: web, pdf
+
+
+    - title: プラグイン利用カスタマイズ
+      url: /mydoc_tag_archives_overview.html
+      output: web
+      
+      subfolders:
       - title: プラグインの利用
         output: web, pdf
-        folderitems: 
+        subfolderitems:
           - title: プラグイン導入方法
+            url: /guideline/plugin-install
+            output: web, pdf
+          - title: プラグイン導入方法のトラブルシューティング
+            url: /guideline/plugin-install
+            output: web, pdf
+
+    - title: プラグイン機構を利用したカスタマイズ
+      url: /mydoc_tag_archives_overview.html
+      output: web
+      
+      subfolders:
+      - title: プラグイン機構の利用
+        output: web, pdf
+        subfolderitems:
+          - title: プラグインジェネレータの活用方法
+            url: /guideline/plugin-install
+            output: web, pdf
+          - title: 新規ページの追加
+            url: /guideline/plugin-install
+            output: web, pdf
+          - title: 利用しないページの削除
+            url: /guideline/plugin-install
+            output: web, pdf
+          - title: フォームの追加、変更
+            url: /guideline/plugin-install
+            output: web, pdf
+          - title: プラグイン用テーブルの追加
+            url: /guideline/plugin-install
+            output: web, pdf
+ 
+    - title: コアコードのカスタマイズ指針
+      url: /mydoc_tag_archives_overview.html
+      output: web
+      
+      subfolders:
+      - title: カスタマイズ指針
+        output: web, pdf
+        subfolderitems:
+          - title: プラグインジェネレータの活用方法
+            url: /guideline/plugin-install
+            output: web, pdf
+          - title: 新規ページの追加
+            url: /guideline/plugin-install
+            output: web, pdf
+          - title: 利用しないページの削除
+            url: /guideline/plugin-install
+            output: web, pdf
+          - title: フォームの追加、変更
+            url: /guideline/plugin-install
+            output: web, pdf
+          - title: プラグイン用テーブルの追加
             url: /guideline/plugin-install
             output: web, pdf
 
